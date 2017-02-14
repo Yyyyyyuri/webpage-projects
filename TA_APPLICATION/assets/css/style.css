@@ -1,0 +1,111 @@
+header {
+    text-align:center;
+    padding:25px;
+}
+
+body {
+  background-color: #A7FAE3;
+  margin-left: 10%;
+  margin-right: 10%;
+  float: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#optionListStatus {
+  margin: 10px;
+  padding: 10px;
+  float: center;
+  text-align: center;
+}
+
+#addApp {
+  float: center;
+  text-align: center;
+  margin:10px;
+}
+
+.info {
+  display: inline-block;
+}
+
+#buttons {
+  float:center;
+  text-align: center;
+}
+
+.smallButton {
+  float: center;
+  border: 2px solid #A7FAE3;
+  border-radius: 10px;
+  padding: 7px 16px;
+  text-align: center;
+  font-size: 10px;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 66%;
+    text-align: center;
+}
+
+label {
+  padding: 5px;
+  margin: 5px;
+  float: center;
+}
+
+span.blank {
+  text-align: center;
+  color: red;
+  float: center;
+}
+
+span.code {
+  float: center;
+}
+
+p {
+  text-align: center;
+  margin: 5px;
+}
+
+.choice{
+    float: center;
+    width: 100%;
+    border: 2px solid #A7FAE3;
+    border-radius: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#statusField {
+  float: center;
+  width: 100%;
+  margin-left: 40%;
+  margin-right: 20%;
+}
+
+input[type="text"] {
+  width: 70px;
+}
+
+table {
+  width:100%;
+  margin:15px 0;
+  text-align: center;
+}
+td, th {
+  border:1px solid black;
+  padding:5px;
+  border-radius: 2px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>TA Profile Information</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="scripts/showApplicants.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>TA Application Form</h1>
+        </header>
+
+        <div id="allChoice">
+            <input class="choice" id="listByFamilyname" type="button" value="Show All Applicants"><br>
+
+            <input class="choice" id="listByStatus" type="button" value="Applicants by Status"><br>
+
+            <input class="choice" id="listByFname" type="button" value="Search by Family Name"><br>
+
+            <input class="choice" id="addAppButton" type="button" value="Add Applicant"><br>
+
+            <input class="choice" id="removeApp" type="button" value="Remove Applicant"><br>
+
+            <input class="choice" id="listCourses" type="button" value="Courses"><br>
+
+            <input class="choice" id="listAppParticularCourse" type="button" value="Search for Course"><br>
+        </div>
+
+        <div id="optionList">
+            <div id="optionListStatus" class="hidden">
+                    <select id="selectMenu">
+                        <option value="Undergrad">Undergrad</option>
+                        <option value="MSc">MSc</option>
+                        <option value="PhD">PhD</option>
+                        <option value="MScAC">MScAC</option>
+                        <option value="MEng">MEng</option>
+                    </select>
+                    <input class="smallButton" id="submitStatus" type="button" value="Submit">
+            </div>
+
+          <div id="optionListFname" class="hidden">
+              <form id="listByFnameForm">
+                  <label id="courseField"><span class="label">Family Name: </span><input id="fnText" type="text"></label>
+                  <input class="smallButton" id="getAppFamilyname" type="button" value="Submit">
+                  <div id="msgListFname"></div>
+              </form>
+          </div>
+
+          <div id="optionAddApp" class="hidden">
+              <div id="addApp">
+                  <label class="info" id="stunumField">
+                      <span>Student Number: </span>
+                      <input class="info" id="stunumText" type="text" required>
+                  </label><br>
+
+                  <label class="info" id="gnameField">
+                      <span>Givenname: </span>
+                      <input class="info" id="gnameText" type="text" required>
+                  </label><br>
+
+                  <label class="info" id="fnameField">
+                      <span>Familyname: </span>
+                      <input class="info" id="fnameText" type="text" required>
+                  </label><br>
+
+                  <label class="info">
+                      <span>Status: </span>
+                      <select id="selectMenu">
+                          <option value="Undergrad">Undergrad</option>
+                          <option value="MSc">MSc</option>
+                          <option value="PhD">PhD</option>
+                          <option value="MScAC">MScAC</option>
+                          <option value="MEng">MEng</option>
+                      </select>
+                  </label><br>
+
+                  <label class="info" id="yearField">
+                      <span>Year: </span>
+                      <input class="info" id="yearText" type="text" required>
+                  </label><br>
+
+                  <label class="info" id="Field">
+                    <span class="label">Course Code: </span><input class="info" id="codeText" type="text" required>
+                    <span class="label">Rank: </span><input class="info" id="rankText" type="text" required>
+                    <span class="label">Experience: </span><input class="info" id="expText" type="text" required>
+                  </label><br>
+              </div>
+
+              <div id="buttons">
+                  <input class="smallButton" id="addCourseApply" type="button" value="Add another course">
+                  <input class="smallButton" id="delCourse" type="button" value="Delete a course">
+                  <input class="smallButton" id="submitNewApp" type="submit" value="Submit">
+              </div>
+            </div>
+
+            <div id="optionRmvApp" class="hidden">
+                <form id="remove" method="post">
+                    <label id="rmvStunumField"><span class="label">By student number: </span>
+                    <input id="rmvStunumText" type="text"></label>
+                    <input class="smallButton" id="submitRmvStunum" type="button" value="Submit">
+                    <div id="msgRmvStunum"></div>
+                </form>
+
+                <form id="remove" method="post">
+                    <label id="rmvFnameField"><span class="label">By Family Name: </span>
+                    <input id="rmvFnameText" type="text"></label>
+                    <input class="smallButton" id="submitRmvFname" type="button" value="Submit">
+                    <div id="msgRmvFname"></div>
+                </form>
+            </div>
+
+            <div id="optionCourseCode" class="hidden">
+                <form>
+                    <label id="courseField"><span class="label">Course Code: </span><input id="courseCodeText" type="text"></label>
+                    <input class="smallButton" id="submitCourseField" type="button" value="Search">
+                    <div id="msgCourseCode"></div>
+                </form>
+            </div>
+
+        </div>
+
+        <div id="appList"></div>
+
+    </body>
+</html>

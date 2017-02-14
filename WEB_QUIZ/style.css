@@ -1,0 +1,145 @@
+#title {
+	display:table;
+	height: 30px;
+	padding: 5px;
+	margin: 5px;
+	width:96.8%;
+	border: 3px solid white;
+	border-radius: 10px;
+	position: fixed;
+	top: 0;
+	background-color: #ffffe6;
+	color: black;
+	text-shadow: none;
+}
+body {
+	background-image: url("bk.jpg");
+	color: #ffff99;
+	text-shadow: 2px 2px black;
+}
+
+#welcome {
+	display:table-cell;
+	vertical-align: middle;
+	padding: 10px;
+}
+#reset {
+	box-shadow: 5px 5px 5px #ffffcc;
+	display:table-cell;
+	vertical-align: middle;
+	float: right;
+}
+#score {
+	display:table-cell;
+	vertical-align: middle;
+	float: right;
+	padding: 10px;
+}
+
+
+#q1 {
+	margin: 110px 5px 5px 5px;
+	display: block;
+	padding: 5px;
+	text-align: left;
+	width: 98%;
+	border: 3px solid white;
+	border-radius: 10px;
+}
+button {
+	background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 1px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+button:hover {
+	background-color: #ffff99;
+	color: white;
+}
+#q2 {
+	display: block;
+	padding: 5px;
+	margin: 5px;
+	text-align: left;
+	width:98%;
+	border: 3px solid white;
+	border-radius: 10px;
+}
+#q3 {
+	display: block;
+	padding: 5px;
+	margin: 5px;
+	text-align: left;
+	width:98%;
+	border: 3px solid white;
+	border-radius: 10px;
+}
+#q4 {
+	display: block;
+	padding: 5px;
+	margin: 5px;
+	text-align: left;
+	width:98%;
+	border: 3px solid white;
+	border-radius: 10px;
+}
+
+#choice {
+	display:table;
+	width:98%;
+}
+
+#leftcol {
+	display:table-cell;
+	vertical-align: middle;
+	float: left;
+	width: 18%;
+
+}
+#rightcol {
+	display: table-cell;
+	vertical-align: middle;
+	float: right;
+	width: 82%;
+}
+#leftcol p {
+	float: left;
+}
+#rightcol p {
+	float: right;
+}
+
+#choices {
+	border: 1px solid white;
+	border-radius: 10px;
+	float: left;
+	width:48%;
+}
+
+#answers {
+	border: 1px solid white;
+	border-radius: 10px;
+	float: right;
+	width:48%;
+}
+#a1, #a2, #a3, #a4, #a5, #a6, #a7 {
+	width: 90%;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+	border: 1px solid #ff3385;
+	border-radius: 10px;
+}
+#c1, #c2, #c3, #c4, #c5, #c6, #c7 {
+	width: 90%;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+	border: 1px solid #ff3385;
+	border-radius: 10px;
+}

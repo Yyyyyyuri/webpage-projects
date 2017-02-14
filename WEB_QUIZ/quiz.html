@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"></meta>
+		<title>Welcome to CS QUIZ</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<article id="title">
+			<h1 id="welcome">Welcome to CS QUIZ</h1>
+			<form>
+				<button id="reset" onclick="history.go(0)">RESET</button>
+			</form>
+			<h1 id="score">Total Score: 0/8</h1>
+		</article>
+		<div id="q1">
+			<p>
+				Question 1: The first electronic computer in Canada was housed in the Computer Science Department at the U of T.  What was its name?
+			</p>
+			<div id="ans1"></div>
+			<div id="ans2"></div>
+			<div id="ans3"></div>
+			<div id="ans4"></div>
+			<div id="showAll"></div>
+			<div id="q1score"></div>
+		</div>
+
+		
+		<div id="q2">
+			<p>
+				Question 2:
+				University of Toronto Professors Kelly Gotlieb and Pat Hume are credited in the Oxford English Dictionary with early published use of more than 10 words used in the vocabulary of computing from their 1958 book, "High-speed Data Processing".  Which two of the following are *not* words for which they are quoted in the OED?
+			</p>
+			<div id="q2choice"></div>
+			<div id="q2submit"></div>
+			<div id="q2result"></div>
+			<div id="q2score"></div>
+		</div>
+
+		
+		<div id="q3">
+			<p>
+				Question 3:
+				Match the CS Professor with his or her claim to fame: (click on choice in left column then right column to pair them up)
+			</p>
+			<div id="choice">
+				<div id="leftcol"></div>
+				<div id="rightcol"></div>
+			</div>
+			<div id="q3score"></div>
+			
+		</div>
+		
+		<div id="q4">
+			<p>
+				Question 4:
+				Arrange by year of invention from oldest to newest:(order it in the right table by having older ones to the top)
+			</p>
+			<script>
+				function allowDrop(ev) {
+				    ev.preventDefault();
+				}
+
+				function drag(ev) {
+				    ev.dataTransfer.setData("text", ev.target.id);
+				}
+
+				function drop(ev) {
+				    ev.preventDefault();
+				    var data = ev.dataTransfer.getData("text");
+				    ev.target.appendChild(document.getElementById(data));
+				}
+			</script>
+			<div id="choices">
+				<div id="c1" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<p id="p1" draggable="true" ondragstart="drag(event)">First Microprocessor: Intel 4004</p>
+				</div>
+				<div id="c2" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<p id="p2" draggable="true" ondragstart="drag(event)">First Popular High-Level Language: FORTRAN</p>
+				</div>
+				<div id="c3" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<p id="p3" draggable="true" ondragstart="drag(event)">First Open Source Software: A-2 System</p>
+				</div>
+				<div id="c4" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<p id="p4" draggable="true" ondragstart="drag(event)">First Compiler for Electronic Computer: A-0 System</p>
+				</div>
+				
+				<div id="c5" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<p id="p5" draggable="true" ondragstart="drag(event)">The First Computer Network</p>
+				</div>
+				
+				<div id="c6" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<p id="p6" draggable="true" ondragstart="drag(event)">First Computer Program</p>
+				</div>
+				
+				<div id="c7" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<p id="p7" draggable="true" ondragstart="drag(event)">First Object Oriented Programming Language: Simula</p>
+				</div>
+				
+			</div>
+			<div id="answers">
+				<div id="a1" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+				<div id="a2" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+				<div id="a3" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+				<div id="a4" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+				<div id="a5" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+				<div id="a6" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+				<div id="a7" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)"></div>
+			</div>
+			<div id="q4submit"></div>
+			<div id="q4score"></div>
+		</div>
+
+		<script src="quiz.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

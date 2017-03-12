@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title id="itemDesTitle">item Description</title>
+       <!-- <link rel="stylesheet" href="/assets/css/itemDes.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="/assets/scripts/itemDesScript.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style type="text/css">
+            body {
+                font-family: "Papyrus", Georgia, sans-serif;
+                font-weight: bold;
+                font-size: 20px;
+                margin-left: 20px;
+            }
+
+            header {
+                text-align: center;
+            }
+
+            form {
+                border: 1px double;
+                border-color: lightblue;
+                padding: 2rem;
+                width: 66%;
+                margin-top: 10rem;
+            }
+
+            div.form_element {
+                margin: 1rem;
+            }
+            #bottom {
+                width: 66%;
+                margin-top: 50px;
+            }
+            img {
+                z-index: -1;
+            }
+
+/*            input,
+            textarea,
+            select,
+            option {
+                border: 1px solid #ccc;
+                font: inherit;
+                padding: 0.25rem;
+            }
+*/
+            /*
+
+            input[type='submit'],
+            input[type='reset'] {
+                cursor: pointer;
+                padding: 0.5rem 2rem;
+            }
+            input[type='submit']:hover,
+            input[type='reset']:hover {
+                background-color: #f3f3f3;
+            }
+            input[type='submit']:active,
+            input[type='reset']:active {
+                background-color: #ccc;
+                border-color: #999;
+            }
+
+            input#otherdept {
+                display: none;
+                margin-left: 20rem;
+            }
+*/
+           /* textarea {
+                max-width: 100%;
+            }
+
+            fieldset {
+                border: 1px solid #ccc;
+                margin: 3rem 0;
+            }
+
+
+            input:invalid {
+              background-color: #ffc6Bb;
+              outline: 2px solid red;
+            }*/
+
+        </style>
+    </head>
+    <body>
+        <div id = "title"  style = "top: 0; right: 10px; border-style: double; position: fixed">
+            <button id = "home" class="btn btn-info">HomePage</button>
+        </div>
+
+            <form id="itemInfo" action="confirmation.html" method="GET">
+                <div id="itemName"></div>
+                <div id="itemDept"></div>
+                <div id="itemPrice"></div>
+                <div id="itemQuantity"></div>
+                <!-- <button id="buyIt">BUY IT!</button> -->
+                <input type="submit" id="buyIt"  class="btn btn-info" value="BUY IT!">
+            </form>
+
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+               <input id="description" type="checkbox" checked autocomplete="off">Description<br>
+                </label>
+                <label class="btn btn-primary active">
+                <input id="comment" type="checkbox" checked autocomplete="off">Comments<br>
+            </label>
+            </div>
+            <div id = "bottom"></div>
+            <img src = "../../confirmation.jpg" style="position:absolute; bottom:0px; left:50%;opacity: 0.5; filter: alpha(opacity=50);">
+
+
+        <form id="passData" type="hidden" style="display: none;">
+            <p id="curUser"></p>
+            <p id="curItem"></p>
+            <p id="idname"></p>
+        </form>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>Buyer HomePage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script/showBuyer.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <style>
+		body {
+        background-image: url("1.jpg");
+		} 
+ 		#table table-striped
+
+ 		table,tr,td {
+ 			border-style: double;
+ 		}
+	</style>
+</head>
+</head>
+
+<body>
+    <div id = "title"  style = "top: 0; right: 10px; border-style: double; position: fixed">
+        <button id = "home" class="btn btn-info">Home</button>
+        <button id="logout"class="btn btn-info">LOGOUT</button>
+    </div>
+
+    <h2 class="lead">Buyer Homepage</h2>
+
+    <div class="btn-group" data-toggle="buttons">
+		<label class="btn btn-primary active">
+	  		<input id="shoplistButton" type="checkbox" checked autocomplete="off">Show Shop List<br>
+	  	</label>
+	  	<label class="btn btn-primary active">
+	  		<input id="changepasswordButton" type="checkbox" checked autocomplete="off">Change Password<br>
+	  	</label>
+	 </div>
+    
+	
+	<h1 id="showHi" class="lead" style="text-align : center"></h1>
+
+	<div id="shoplistdiv">
+		<table id='shoplist' class="table table-striped" style = "border-style: double"></table>
+	</div>
+
+
+	<div id="passworddiv" class="container-fluid" style="display: none;">
+	<p>Please enter the password you want to change:</p>
+	<input type="text" id="password" name="password">
+	<button type="button" id = "changePassword" class="btn btn-danger">Change</button>
+	</div>
+
+	<form id="passData" type="hidden" style="display: none;">
+            <p id="curUser"></p>
+            <p id="idname"></p>
+    </form>
+
+</body>

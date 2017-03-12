@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title id="itemDesTitle">Confirmation</title>
+        <!-- <link rel="stylesheet" href="itemDes.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="/assets/scripts/confirmation.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style type="text/css">
+            body {
+                font-family: "Papyrus", Georgia, sans-serif;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            header {
+                text-align: center;
+                margin-top: 10rem;
+            }
+
+            form {
+                border: 1px double;
+                border-color: lightblue;
+                padding: 2rem;
+                width: 66%;
+                margin-top: 10rem;
+            }
+
+            div.form_element {
+                margin: 1rem;
+            }
+            img {
+                z-index: -1;
+            }
+
+        </style>
+    </head>
+
+    <header> CONFIRMATION PAGE </header>
+
+	<div id = "title"  style = "top: 0; right: 10px; border-style: double; position: fixed">
+	    <button id = "home" class="btn btn-info">HomePage</button>
+    </div>
+
+	<form id="confirmation">
+		<p id="name"></p>
+		<p id="price"></p>
+		<div id="address">
+			<label id="addressField"><span>Mailing Address: </span><input id="addressText" type="text"></label>
+		</div>
+		<input id="confirm" type="button" value="Submit" class="btn btn-info">
+	</form>
+
+    <img src = "../../confirmation.jpg" style="position:absolute; bottom:0px; left:50%;opacity: 0.5; filter: alpha(opacity=50);">
+
+    <form id="passData" type="hidden" style="display: none;">
+        <p id="curUser"></p>
+        <p id="curItem"></p>
+        <p id="idname"></p>
+    </form>
+
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ZSLS Login</title>
+
+        <link rel="stylesheet" href="assets/css/login.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="assets/scripts/login.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>ZSLS Login</h1>
+        </header>
+
+        <div id = "title"  style = "top: 0; right: 10px; border-style: double; position: fixed">
+            <button id = "home"  class="btn btn-info">HomePage</button>
+        </div>
+        
+        <form id="main_redir" method="GET">
+
+            <div class="form_element">
+                <label id="givenField">
+                    <span class="label">Username: </span>
+                    <input type="text" id="username">
+                </label>
+            </div>
+
+            <div class="form_element">
+                <label id="givenField">
+                    <span class="label">Password: </span>
+                    <input type="password" id="password">
+                </label>
+            </div>
+
+            <select id="role">
+                <option value="buyer">buyer</option>
+                <option value="seller">seller</option>
+            </select>
+
+            <div>
+                <input id="LoginButton" type="button" value="Login">
+            </div>
+
+        </form>
+        <form id="register_redir" action="register.html" method="GET">
+            <div>
+                <input id="CreateButton" type="submit" value="Create Account">
+            </div>
+        </form>
+    </body>
+</html>
